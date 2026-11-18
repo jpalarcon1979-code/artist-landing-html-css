@@ -283,9 +283,19 @@ nav a:focus-visible {
 }
 
 /* Evitar que el menú tape el contenido */
+
+/* Espacio al navegar entre secciones */
 section {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 100px;
 }
+
+/* Espacio adicional para menú móvil */
+@media (max-width: 600px) {
+  section {
+    scroll-margin-top: 120px;
+  }
+}
+
 
 /* Respetar preferencias de movimiento */
 @media (prefers-reduced-motion: reduce) {
@@ -295,5 +305,69 @@ section {
 
   .boton-principal {
     transition: none;
+  }
+}
+
+/* Portafolio fotográfico */
+.portafolio {
+  background-color: #111827;
+}
+
+.portafolio-intro {
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 35px;
+}
+
+.galeria figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #1f2937;
+  text-align: left;
+}
+
+.galeria img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.galeria figcaption {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.galeria strong {
+  color: #38bdf8;
+  font-size: 20px;
+}
+
+.galeria span,
+.galeria-nota {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.galeria-nota {
+  margin-top: 25px;
+}
+
+/* Galería en celulares */
+@media (max-width: 750px) {
+  .galeria {
+    grid-template-columns: 1fr;
   }
 }

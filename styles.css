@@ -1,0 +1,299 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111827;
+  color: #ffffff;
+}
+
+/* Barra de navegación */
+
+header {
+  background-color: #1f2937;
+  padding: 25px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Secciones principales */
+section {
+  min-height: 100vh;
+  padding: 80px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+/* Pie de página */
+footer {
+  background-color: #1f2937;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Interacción y accesibilidad */
+nav a:hover,
+nav a:focus-visible {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+nav a:focus-visible {
+  outline: 2px solid #38bdf8;
+  outline-offset: 5px;
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
+
+/* Portada principal */
+.hero {
+  background: linear-gradient(135deg, #111827, #253b53);
+  gap: 20px;
+}
+
+.hero-etiqueta {
+  color: #38bdf8;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 7vw, 80px);
+  margin: 0;
+}
+
+.hero-descripcion {
+  max-width: 600px;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* Botón principal */
+.boton-principal {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 16px 32px;
+  background-color: #38bdf8;
+  color: #111827;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.boton-principal:hover,
+.boton-principal:focus-visible {
+  background-color: #7dd3fc;
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* Sección Sobre mí */
+.sobre-mi {
+  background-color: #172337;
+}
+
+.sobre-mi-contenido {
+  max-width: 750px;
+}
+
+.seccion-etiqueta {
+  color: #38bdf8;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.sobre-mi h2 {
+  font-size: clamp(30px, 5vw, 48px);
+  line-height: 1.2;
+}
+
+.sobre-mi p {
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+/* Sección Trayectoria */
+.trayectoria {
+  background-color: #111827;
+}
+
+.trayectoria-intro {
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Tarjetas de trayectoria */
+.trayectoria-lista {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1100px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.trayectoria-lista li {
+  background-color: #1f2937;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  text-align: left;
+}
+
+.trayectoria-lista h3 {
+  color: #38bdf8;
+  font-size: 22px;
+}
+
+.trayectoria-lista p {
+  line-height: 1.7;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 750px) {
+  .trayectoria-lista {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Próximas presentaciones */
+.presentaciones {
+  background-color: #172337;
+}
+
+.presentaciones-intro {
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.eventos-lista {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 950px;
+  margin-top: 40px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.evento {
+  background-color: #1f2937;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 35px;
+  text-align: left;
+  height: 100%;
+}
+
+.evento-estado {
+  color: #38bdf8;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.evento h3 {
+  font-size: 24px;
+}
+
+.evento p {
+  line-height: 1.7;
+}
+
+.evento-fecha {
+  color: #7dd3fc;
+  font-weight: bold;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 750px) {
+  .eventos-lista {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Accesibilidad: saltar navegación */
+.saltar-contenido {
+  position: absolute;
+  top: -100px;
+  left: 20px;
+  background-color: #38bdf8;
+  color: #111827;
+  padding: 12px 20px;
+  z-index: 200;
+  font-weight: bold;
+}
+
+.saltar-contenido:focus {
+  top: 10px;
+}
+
+/* Evitar que el menú tape el contenido */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Respetar preferencias de movimiento */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .boton-principal {
+    transition: none;
+  }
+}

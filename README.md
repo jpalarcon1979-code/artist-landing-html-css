@@ -1,41 +1,89 @@
-# HTML Hello
 
-The most basic boilerplate for any 4Geeks Academy student, start your very first website from scratch.
+# Alex Rivera — Portafolio Fotográfico
 
-> There is a video tutorial on [how to use this template to create your very first website here](https://youtu.be/dfbDCMu_p-0).
+Landing page desarrollada como proyecto del
+Bootcamp de AI Engineering de 4Geeks Academy.
 
-## What to do next?
+## Descripción
 
-Create an `index.html` file with the [basic HTML structure](http://4geeks.com/lesson/what-is-html-learn-html#page-structure) and see it live by running a web-server using the following command:
+Sitio web de una sola página para presentar
+el trabajo de Alex Rivera, un fotógrafo ficticio.
 
-```bash
-$ pip3 install flask && python3 server.py
-```
+Incluye una galería de fotografías de muestra,
+una biografía, una trayectoria artística y
+una sección de exposiciones.
 
-- You can create as many HTML files as you want.
-- You can also create CSS files and import them into your website using a `<link>` tag placed between the `<head></head>` tags, like this:
+## Tecnologías
 
-```html
-<head>
-  ...
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
-```
+- HTML5: estructura y contenido.
+- CSS3: diseño visual y responsive.
+- Schema.org: datos estructurados mediante Microdata.
 
-- If you want to use Tailwind CSS, add it optionally via the official Tailwind CSS v4 CDN inside the same `<head>`:
+El sitio no utiliza JavaScript ni frameworks.
 
-```html
-<head>
-  ...
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
-```
+## Características
 
-### Contributors
+- Navegación entre secciones.
+- Diseño adaptable a celulares.
+- HTML semántico.
+- Navegación accesible mediante teclado.
+- Textos alternativos en las imágenes.
+- Metadatos para SEO.
+- Datos estructurados Schema.org.
 
-This template was built as part of the [Full Stack Developer course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer) at [4Geeks Academy Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and [many other contributors](https://github.com/4GeeksAcademy/html-hello/graphs/contributors).
+## Estructura del proyecto
 
-You can find other templates and resources like this at the [school's GitHub page](https://github.com/4geeksacademy/).
+- index.html: contenido y estructura web.
+- styles.css: estilos y diseño visual.
+- README.md: documentación.
+
+## Cómo ejecutar el proyecto
+
+Abrir una terminal en la carpeta del proyecto
+y ejecutar:
+
+    python3 -m http.server 8000
+
+Luego abrir en el navegador:
+
+    http://localhost:8000
+
+El servidor Python se utiliza solo para
+previsualizar la página durante el desarrollo.
+
+## Validaciones realizadas
+
+- HTML: sin errores ni advertencias.
+- CSS: validación W3C satisfactoria.
+- Schema.org: sin errores ni advertencias.
+
+Resultados de Lighthouse en Codespaces:
+
+- Rendimiento: 99/100.
+- Accesibilidad: 100/100.
+- Buenas prácticas: 96/100.
+- SEO: 63/100.
+
+El resultado SEO está afectado por restricciones
+de indexación detectadas en la URL de Codespaces.
+Debe comprobarse nuevamente al publicar el sitio.
+
+## Imágenes y contenido
+
+Alex Rivera es un personaje ficticio.
+
+Las fotografías son ilustrativas, provienen
+de Unsplash y no son obras de Alex Rivera.
+
+Créditos de las imágenes utilizadas:
+- Jeremy Bishop.
+- Alef Morais.
+- Pawel Czerwinski.
+
+Las exposiciones y la trayectoria también
+son contenido ficticio de demostración.
+
+## Autor
+
+Proyecto académico desarrollado por
+jpalarcon1979-code para 4Geeks Academy.
